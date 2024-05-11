@@ -1,0 +1,54 @@
+.your_team {
+  display: flex;
+  justify-content: center;
+  font-family: "League Spartan", sans-serif;
+  padding-bottom: 100px;
+  width: 100%;
+  height: 720px;
+}
+.your_team .your_team_container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 1110px;
+  height: 720px;
+  background: url(../../img/keyboard.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.your_team .your_team_container .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transform: translateX(165px);
+  width: 793px;
+  height: 503px;
+  background: #fff;
+}
+.your_team .your_team_container .about img {
+  transform: translateY(-100px);
+  width: 645px;
+  height: 200px;
+}
+.your_team .your_team_container .about .professionals {
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+  margin: 0 auto;
+  width: 446px;
+  height: 341px;
+}
+.your_team .your_team_container .about .professionals h1 {
+  margin-top: 58px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 89%;
+  letter-spacing: -0.03em;
+  color: #1b1d23;
+}
+.your_team .your_team_container .about .professionals p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  color: #60636d;
+}/*# sourceMappingURL=your_team.css.map */
