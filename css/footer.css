@@ -49,9 +49,10 @@ footer .footer_container nav ul a:hover {
 }
 footer .footer_container a {
   text-decoration: none;
+  width: 252px;
+  transform: translateX(126px);
 }
 footer .footer_container a button {
-  transform: translateX(126px);
   display: flex;
   gap: 24px;
   align-items: center;

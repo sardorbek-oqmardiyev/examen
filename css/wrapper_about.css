@@ -1,0 +1,8 @@
+.wrapper_about {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1311px;
+  background: url(../../img/logo/about_line.svg) no-repeat top left;
+}/*# sourceMappingURL=wrapper_about.css.map */

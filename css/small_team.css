@@ -33,6 +33,7 @@
 }
 .small .small_container .team_big a {
   text-decoration: none;
+  width: 187px;
 }
 .small .small_container .team_big a button {
   display: flex;

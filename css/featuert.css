@@ -29,6 +29,7 @@
 }
 .featuert .featuert_container .featuert_header a {
   text-decoration: none;
+  width: 169px;
 }
 .featuert .featuert_container .featuert_header a button {
   display: flex;

@@ -262,9 +262,10 @@ footer .footer_container nav ul a:hover {
 }
 footer .footer_container a {
   text-decoration: none;
+  width: 252px;
+  transform: translateX(126px);
 }
 footer .footer_container a button {
-  transform: translateX(126px);
   display: flex;
   gap: 24px;
   align-items: center;
@@ -283,4 +284,13 @@ footer .footer_container a button {
 footer .footer_container a button:hover {
   transition: 0.3s;
   background: #60636d;
+}
+
+.wrapper_about {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1311px;
+  background: url(../../img/logo/about_line.svg) no-repeat top left;
 }/*# sourceMappingURL=about.css.map */
