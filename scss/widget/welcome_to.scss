@@ -48,3 +48,25 @@
     }
   }
 }
+@media (max-width: 1200px) {
+  .welcome {
+    height: 600px;
+    .welcome_container {
+      width: 573px;
+      height: 600px;
+      background: none;
+      img {
+        width: 581px;
+        height: 200px;
+      }
+      .studio {
+        transform: translate(0px, 0px);
+        width: 573px;
+        height: 411px;
+        .we_have {
+          width: 545px;
+        }
+      }
+    }
+  }
+}

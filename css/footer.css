@@ -17,7 +17,6 @@ footer .footer_container {
 footer .footer_container nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 598px;
   height: 200px;
 }
@@ -71,4 +70,70 @@ footer .footer_container a button {
 footer .footer_container a button:hover {
   transition: 0.3s;
   background: #60636d;
+}
+
+@media (max-width: 1200px) {
+  footer {
+    max-width: 768px;
+    height: 120px;
+  }
+  footer .footer_container {
+    width: 612px;
+    height: 120px;
+  }
+  footer .footer_container nav {
+    gap: 40px;
+    width: 473px;
+    height: 120px;
+  }
+  footer .footer_container nav .arch {
+    width: 120px;
+    height: 120px;
+  }
+  footer .footer_container nav .arch img {
+    width: 58px;
+    height: 24px;
+  }
+  footer .footer_container a button {
+    transform: translateX(-52px);
+  }
+}
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 443px;
+    background: #eeeff4;
+  }
+  footer .footer_container {
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+    height: 443px;
+  }
+  footer .footer_container nav {
+    width: 473px;
+    height: 120px;
+  }
+  footer .footer_container nav ul {
+    flex-direction: column;
+    align-items: center;
+    transform: translate(50px, 130px);
+    width: 72px;
+    height: 139px;
+  }
+  footer .footer_container nav .arch {
+    transform: translate(180px, -65px);
+    width: 120px;
+    height: 120px;
+  }
+  footer .footer_container nav .arch img {
+    width: 58px;
+    height: 24px;
+  }
+  footer .footer_container a button {
+    transform: translateX(-120px);
+    margin-bottom: 48px;
+  }
 }/*# sourceMappingURL=footer.css.map */

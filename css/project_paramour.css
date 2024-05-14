@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   gap: 102px;
-  padding-bottom: 54px;
   font-family: "League Spartan", sans-serif;
   width: 100%;
   height: 720px;
@@ -11,6 +10,7 @@
   display: flex;
   gap: 99px;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-end;
   width: 1110px;
   height: 720px;
@@ -93,4 +93,19 @@
 .project .project_container .number .number_container:hover {
   transition: 0.3s;
   background: #eeeff4;
+}
+
+@media (max-width: 1200px) {
+  .project .project_container {
+    justify-content: center;
+    width: 573px;
+    background: url(../../img/projekt_paramuar_tablet.png);
+  }
+  .project .project_container .paramour {
+    margin-left: 0;
+    padding-left: 58px;
+  }
+  .project .project_container .number {
+    display: none;
+  }
 }/*# sourceMappingURL=project_paramour.css.map */

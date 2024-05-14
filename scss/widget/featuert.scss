@@ -140,3 +140,47 @@
     }
   }
 }
+@media (max-width: 1200px) {
+  .featuert {
+    height: 925px;
+    .featuert_container {
+      width: 573px;
+      height: 925px;
+      .featuert_header {
+        width: 573px;
+      }
+      .number_project {
+        flex-direction: column;
+        width: 573px;
+        height: 768px;
+        .project_1_number {
+          justify-content: flex-start;
+          width: 573px;
+          height: 240px;
+          background: url(../../img/le_prototype_tablet.png);
+          .text_part {
+            padding-left: 40px;
+          }
+        }
+        .tover_2_number {
+          justify-content: flex-start;
+          width: 573px;
+          height: 240px;
+          background: url(../../img/tover_tablet.png);
+          .text_2_number {
+            padding-left: 40px;
+          }
+        }
+        .le_3_number {
+          justify-content: flex-start;
+          width: 573px;
+          height: 240px;
+          background: url(../../img/le_prototype_tablet.png);
+          .text_3_number {
+            padding-left: 40px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,28 @@
-.wrapper_home {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1311px;
-  background: url(../img/logo/home_line.svg) no-repeat top left;
+.home_line {
+  font-family: "League Spartan", sans-serif;
+  position: fixed;
+  left: 43px;
+  width: 24px;
+  height: 272px;
+}
+.home_line .line {
+  width: 1px;
+  height: 104px;
+  background: #c8ccd8;
+}
+.home_line p {
+  padding-top: 49px;
+  padding-right: 46px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: 1em;
+  transform: rotate(90deg);
+  color: #c8ccd8;
+}
+
+@media (max-width: 800px) {
+  .home_line {
+    display: none;
+  }
 }/*# sourceMappingURL=wrapper_home.css.map */

@@ -137,4 +137,49 @@
   line-height: 133%;
   opacity: 0.75;
   color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .featuert {
+    height: 925px;
+  }
+  .featuert .featuert_container {
+    width: 573px;
+    height: 925px;
+  }
+  .featuert .featuert_container .featuert_header {
+    width: 573px;
+  }
+  .featuert .featuert_container .number_project {
+    flex-direction: column;
+    width: 573px;
+    height: 768px;
+  }
+  .featuert .featuert_container .number_project .project_1_number {
+    justify-content: flex-start;
+    width: 573px;
+    height: 240px;
+    background: url(../../img/le_prototype_tablet.png);
+  }
+  .featuert .featuert_container .number_project .project_1_number .text_part {
+    padding-left: 40px;
+  }
+  .featuert .featuert_container .number_project .tover_2_number {
+    justify-content: flex-start;
+    width: 573px;
+    height: 240px;
+    background: url(../../img/tover_tablet.png);
+  }
+  .featuert .featuert_container .number_project .tover_2_number .text_2_number {
+    padding-left: 40px;
+  }
+  .featuert .featuert_container .number_project .le_3_number {
+    justify-content: flex-start;
+    width: 573px;
+    height: 240px;
+    background: url(../../img/le_prototype_tablet.png);
+  }
+  .featuert .featuert_container .number_project .le_3_number .text_3_number {
+    padding-left: 40px;
+  }
 }/*# sourceMappingURL=featuert.css.map */

@@ -47,4 +47,27 @@
   font-size: 18px;
   line-height: 133%;
   color: #60636d;
+}
+
+@media (max-width: 1200px) {
+  .welcome {
+    height: 600px;
+  }
+  .welcome .welcome_container {
+    width: 573px;
+    height: 600px;
+    background: none;
+  }
+  .welcome .welcome_container img {
+    width: 581px;
+    height: 200px;
+  }
+  .welcome .welcome_container .studio {
+    transform: translate(0px, 0px);
+    width: 573px;
+    height: 411px;
+  }
+  .welcome .welcome_container .studio .we_have {
+    width: 545px;
+  }
 }/*# sourceMappingURL=welcome_to.css.map */

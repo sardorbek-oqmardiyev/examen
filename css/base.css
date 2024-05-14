@@ -14,4 +14,11 @@ body {
 }
 body main {
   flex-grow: 1;
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }/*# sourceMappingURL=base.css.map */

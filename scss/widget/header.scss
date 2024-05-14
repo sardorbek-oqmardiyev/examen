@@ -8,7 +8,7 @@ header {
   width: 100%;
   max-width: 1110px;
   height: 40px;
-  img {
+  .arch_header {
     width: 96px;
     height: 40px;
   }
@@ -31,6 +31,33 @@ header {
       transition: 0.3s;
       cursor: pointer;
       color: #1b1d23;
+    }
+  }
+  .menu {
+    width: 1px;
+    height: 1px;
+  }
+}
+@media (max-width: 1200px) {
+  header {
+    max-width: 573px;
+  }
+  .menu {
+    width: 1px;
+    height: 1px;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    gap: 210px;
+    width: 311px;
+    height: 32px;
+    ul {
+      display: none;
+    }
+    .menu {
+      width: 24px;
+      height: 17px;
     }
   }
 }

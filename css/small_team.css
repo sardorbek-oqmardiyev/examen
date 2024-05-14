@@ -54,4 +54,15 @@
 .small .small_container .team_big a button:hover {
   transition: 0.3s;
   background: #60636d;
+}
+
+@media (max-width: 1200px) {
+  .small .small_container {
+    width: 573px;
+    background: url(../../img/lake_tablet.png);
+  }
+  .small .small_container .team_big {
+    margin-left: 0px;
+    padding-left: 58px;
+  }
 }/*# sourceMappingURL=small_team.css.map */

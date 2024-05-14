@@ -9,7 +9,7 @@ header {
   max-width: 1110px;
   height: 40px;
 }
-header img {
+header .arch_header {
   width: 96px;
   height: 40px;
 }
@@ -33,4 +33,32 @@ header ul a:hover {
   transition: 0.3s;
   cursor: pointer;
   color: #1b1d23;
+}
+header .menu {
+  width: 1px;
+  height: 1px;
+}
+
+@media (max-width: 1200px) {
+  header {
+    max-width: 573px;
+  }
+  .menu {
+    width: 1px;
+    height: 1px;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    gap: 210px;
+    width: 311px;
+    height: 32px;
+  }
+  header ul {
+    display: none;
+  }
+  header .menu {
+    width: 24px;
+    height: 17px;
+  }
 }/*# sourceMappingURL=header.css.map */

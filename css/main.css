@@ -16,6 +16,12 @@ body main {
   flex-grow: 1;
 }
 
+@media (max-width: 1200px) {
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 header {
   display: flex;
   align-items: center;
@@ -27,7 +33,7 @@ header {
   max-width: 1110px;
   height: 40px;
 }
-header img {
+header .arch_header {
   width: 96px;
   height: 40px;
 }
@@ -52,12 +58,38 @@ header ul a:hover {
   cursor: pointer;
   color: #1b1d23;
 }
+header .menu {
+  width: 1px;
+  height: 1px;
+}
 
+@media (max-width: 1200px) {
+  header {
+    max-width: 573px;
+  }
+  .menu {
+    width: 1px;
+    height: 1px;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    gap: 210px;
+    width: 311px;
+    height: 32px;
+  }
+  header ul {
+    display: none;
+  }
+  header .menu {
+    width: 24px;
+    height: 17px;
+  }
+}
 .project {
   display: flex;
   justify-content: center;
   gap: 102px;
-  padding-bottom: 54px;
   font-family: "League Spartan", sans-serif;
   width: 100%;
   height: 720px;
@@ -66,6 +98,7 @@ header ul a:hover {
   display: flex;
   gap: 99px;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-end;
   width: 1110px;
   height: 720px;
@@ -150,6 +183,20 @@ header ul a:hover {
   background: #eeeff4;
 }
 
+@media (max-width: 1200px) {
+  .project .project_container {
+    justify-content: center;
+    width: 573px;
+    background: url(../../img/projekt_paramuar_tablet.png);
+  }
+  .project .project_container .paramour {
+    margin-left: 0;
+    padding-left: 58px;
+  }
+  .project .project_container .number {
+    display: none;
+  }
+}
 .welcome {
   display: flex;
   justify-content: center;
@@ -201,6 +248,28 @@ header ul a:hover {
   color: #60636d;
 }
 
+@media (max-width: 1200px) {
+  .welcome {
+    height: 600px;
+  }
+  .welcome .welcome_container {
+    width: 573px;
+    height: 600px;
+    background: none;
+  }
+  .welcome .welcome_container img {
+    width: 581px;
+    height: 200px;
+  }
+  .welcome .welcome_container .studio {
+    transform: translate(0px, 0px);
+    width: 573px;
+    height: 411px;
+  }
+  .welcome .welcome_container .studio .we_have {
+    width: 545px;
+  }
+}
 .small {
   display: flex;
   justify-content: center;
@@ -259,6 +328,16 @@ header ul a:hover {
   background: #60636d;
 }
 
+@media (max-width: 1200px) {
+  .small .small_container {
+    width: 573px;
+    background: url(../../img/lake_tablet.png);
+  }
+  .small .small_container .team_big {
+    margin-left: 0px;
+    padding-left: 58px;
+  }
+}
 .featuert {
   display: flex;
   justify-content: center;
@@ -400,6 +479,50 @@ header ul a:hover {
   color: #fff;
 }
 
+@media (max-width: 1200px) {
+  .featuert {
+    height: 925px;
+  }
+  .featuert .featuert_container {
+    width: 573px;
+    height: 925px;
+  }
+  .featuert .featuert_container .featuert_header {
+    width: 573px;
+  }
+  .featuert .featuert_container .number_project {
+    flex-direction: column;
+    width: 573px;
+    height: 768px;
+  }
+  .featuert .featuert_container .number_project .project_1_number {
+    justify-content: flex-start;
+    width: 573px;
+    height: 240px;
+    background: url(../../img/le_prototype_tablet.png);
+  }
+  .featuert .featuert_container .number_project .project_1_number .text_part {
+    padding-left: 40px;
+  }
+  .featuert .featuert_container .number_project .tover_2_number {
+    justify-content: flex-start;
+    width: 573px;
+    height: 240px;
+    background: url(../../img/tover_tablet.png);
+  }
+  .featuert .featuert_container .number_project .tover_2_number .text_2_number {
+    padding-left: 40px;
+  }
+  .featuert .featuert_container .number_project .le_3_number {
+    justify-content: flex-start;
+    width: 573px;
+    height: 240px;
+    background: url(../../img/le_prototype_tablet.png);
+  }
+  .featuert .featuert_container .number_project .le_3_number .text_3_number {
+    padding-left: 40px;
+  }
+}
 footer {
   display: flex;
   margin: 0 auto;
@@ -419,7 +542,6 @@ footer .footer_container {
 footer .footer_container nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 598px;
   height: 200px;
 }
@@ -475,11 +597,96 @@ footer .footer_container a button:hover {
   background: #60636d;
 }
 
-.wrapper_home {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1311px;
-  background: url(../img/logo/home_line.svg) no-repeat top left;
+@media (max-width: 1200px) {
+  footer {
+    max-width: 768px;
+    height: 120px;
+  }
+  footer .footer_container {
+    width: 612px;
+    height: 120px;
+  }
+  footer .footer_container nav {
+    gap: 40px;
+    width: 473px;
+    height: 120px;
+  }
+  footer .footer_container nav .arch {
+    width: 120px;
+    height: 120px;
+  }
+  footer .footer_container nav .arch img {
+    width: 58px;
+    height: 24px;
+  }
+  footer .footer_container a button {
+    transform: translateX(-52px);
+  }
+}
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 443px;
+    background: #eeeff4;
+  }
+  footer .footer_container {
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+    height: 443px;
+  }
+  footer .footer_container nav {
+    width: 473px;
+    height: 120px;
+  }
+  footer .footer_container nav ul {
+    flex-direction: column;
+    align-items: center;
+    transform: translate(50px, 130px);
+    width: 72px;
+    height: 139px;
+  }
+  footer .footer_container nav .arch {
+    transform: translate(180px, -65px);
+    width: 120px;
+    height: 120px;
+  }
+  footer .footer_container nav .arch img {
+    width: 58px;
+    height: 24px;
+  }
+  footer .footer_container a button {
+    transform: translateX(-120px);
+    margin-bottom: 48px;
+  }
+}
+.home_line {
+  font-family: "League Spartan", sans-serif;
+  position: fixed;
+  left: 43px;
+  width: 24px;
+  height: 272px;
+}
+.home_line .line {
+  width: 1px;
+  height: 104px;
+  background: #c8ccd8;
+}
+.home_line p {
+  padding-top: 49px;
+  padding-right: 46px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: 1em;
+  transform: rotate(90deg);
+  color: #c8ccd8;
+}
+
+@media (max-width: 800px) {
+  .home_line {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
