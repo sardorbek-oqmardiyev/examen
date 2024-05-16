@@ -108,4 +108,24 @@
   .project .project_container .number {
     display: none;
   }
+}
+@media (max-width: 768px) {
+  .project .project_container {
+    justify-content: center;
+    width: 375px;
+    height: 560px;
+    background: url(../../img/projekt_paramuar_mobilne.png) no-repeat;
+  }
+  .project .project_container .paramour {
+    margin-left: 0;
+    padding-left: 32px;
+    width: 311px;
+    height: 334px;
+  }
+  .project .project_container .paramour h1 {
+    font-size: 48px;
+  }
+  .project .project_container .number {
+    display: none;
+  }
 }/*# sourceMappingURL=project_paramour.css.map */

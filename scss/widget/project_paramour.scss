@@ -110,3 +110,25 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .project {
+    .project_container {
+      justify-content: center;
+      width: 375px;
+      height: 560px;
+      background: url(../../img/projekt_paramuar_mobilne.png) no-repeat;
+      .paramour {
+        margin-left: 0;
+        padding-left: 32px;
+        width: 311px;
+        height: 334px;
+        h1 {
+          font-size: 48px;
+        }
+      }
+      .number {
+        display: none;
+      }
+    }
+  }
+}

@@ -20,8 +20,13 @@
     transform: rotate(90deg);
   }
 }
-@media (max-width:800px) {
-  .about_line{
+@media (max-width: 1200px) {
+  .about_line {
+    left: 83px;
+  }
+}
+@media (max-width: 768px) {
+  .about_line {
     display: none;
   }
 }

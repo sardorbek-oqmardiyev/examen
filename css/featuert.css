@@ -71,20 +71,20 @@
   width: 200px;
   height: 64px;
 }
-.featuert .featuert_container .number_project .project_1_number .text_part h6 {
+.featuert .featuert_container .number_project .project_1_number h6 {
   font-weight: 700;
   font-size: 32px;
   line-height: 125%;
   color: #fff;
 }
-.featuert .featuert_container .number_project .project_1_number .text_part p {
+.featuert .featuert_container .number_project .project_1_number p {
   font-weight: 500;
   font-size: 18px;
   line-height: 133%;
   opacity: 0.75;
   color: #fff;
 }
-.featuert .featuert_container .number_project .tover_2_number {
+.featuert .featuert_container .tover_2_number {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -93,25 +93,25 @@
   background: url(../img/tover.png);
   background-repeat: no-repeat;
 }
-.featuert .featuert_container .number_project .tover_2_number .text_2_number {
+.featuert .featuert_container .tover_2_number .text_2_number {
   padding-bottom: 39px;
   width: 200px;
   height: 64px;
 }
-.featuert .featuert_container .number_project .tover_2_number .text_2_number h6 {
+.featuert .featuert_container .tover_2_number .text_2_number h6 {
   font-weight: 700;
   font-size: 32px;
   line-height: 125%;
   color: #fff;
 }
-.featuert .featuert_container .number_project .tover_2_number .text_2_number p {
+.featuert .featuert_container .tover_2_number .text_2_number p {
   font-weight: 500;
   font-size: 18px;
   line-height: 133%;
   opacity: 0.75;
   color: #fff;
 }
-.featuert .featuert_container .number_project .le_3_number {
+.featuert .featuert_container .le_3_number {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -120,23 +120,28 @@
   background: url(../img/le_prototype.png);
   background-repeat: no-repeat;
 }
-.featuert .featuert_container .number_project .le_3_number .text_3_number {
+.featuert .featuert_container .le_3_number .text_3_number {
   padding-bottom: 39px;
   width: 200px;
   height: 64px;
 }
-.featuert .featuert_container .number_project .le_3_number .text_3_number h6 {
+.featuert .featuert_container .le_3_number .text_3_number h6 {
   font-weight: 700;
   font-size: 32px;
   line-height: 125%;
   color: #fff;
 }
-.featuert .featuert_container .number_project .le_3_number .text_3_number p {
+.featuert .featuert_container .le_3_number .text_3_number p {
   font-weight: 500;
   font-size: 18px;
   line-height: 133%;
   opacity: 0.75;
   color: #fff;
+}
+.featuert .button_header button {
+  font-size: 0.1px;
+  width: 1px;
+  height: 1px;
 }
 
 @media (max-width: 1200px) {
@@ -152,6 +157,7 @@
   }
   .featuert .featuert_container .number_project {
     flex-direction: column;
+    gap: 24px;
     width: 573px;
     height: 768px;
   }
@@ -181,5 +187,84 @@
   }
   .featuert .featuert_container .number_project .le_3_number .text_3_number {
     padding-left: 40px;
+  }
+  .featuert .featuert_container .button_header button {
+    font-size: 0.1px;
+    width: 1px;
+    height: 1px;
+  }
+}
+@media (max-width: 768px) {
+  .featuert {
+    height: 925px;
+  }
+  .featuert .featuert_container {
+    gap: 43px;
+    width: 311px;
+    height: 925px;
+  }
+  .featuert .featuert_container .featuert_header {
+    width: 311px;
+  }
+  .featuert .featuert_container .featuert_header h5 {
+    font-size: 48px;
+  }
+  .featuert .featuert_container .featuert_header a button {
+    display: none;
+  }
+  .featuert .featuert_container .number_project {
+    flex-direction: column;
+    width: 311px;
+    height: 768px;
+  }
+  .featuert .featuert_container .number_project .project_1_number {
+    justify-content: flex-start;
+    width: 311px;
+    height: 240px;
+    background: url(../../img/project_del_sol_mobelni.png);
+  }
+  .featuert .featuert_container .number_project .project_1_number .text_part {
+    padding-left: 40px;
+  }
+  .featuert .featuert_container .number_project .project_1_number .text_part h6 {
+    font-size: 32px;
+  }
+  .featuert .featuert_container .number_project .tover_2_number {
+    justify-content: flex-start;
+    width: 311px;
+    height: 240px;
+    background: url(../../img/tover_mobilne.png);
+  }
+  .featuert .featuert_container .number_project .tover_2_number .text_2_number {
+    padding-left: 40px;
+  }
+  .featuert .featuert_container .number_project .tover_2_number .text_2_number h6 {
+    font-size: 32px;
+  }
+  .featuert .featuert_container .number_project .le_3_number {
+    justify-content: flex-start;
+    width: 311px;
+    height: 240px;
+    background: url(../../img/le_prototype-mobilne.png);
+  }
+  .featuert .featuert_container .number_project .le_3_number .text_3_number {
+    padding-left: 40px;
+  }
+  .featuert .featuert_container .number_project .le_3_number .text_3_number h6 {
+    font-size: 32px;
+  }
+  .featuert .featuert_container .button_header {
+    text-decoration: none;
+  }
+  .featuert .featuert_container .button_header button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    width: 311px;
+    height: 72px;
+    background: #1b1d23;
+    color: #fff;
   }
 }/*# sourceMappingURL=featuert.css.map */

@@ -1,12 +1,25 @@
 footer {
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
   font-family: "League Spartan", sans-serif;
   width: 100%;
-  max-width: 1110px;
   height: 200px;
 }
 footer .footer_container {
+  display: flex;
+  width: 1110px;
+  height: 200px;
+}
+footer .footer_container .arch_mobile {
+  display: none;
+  width: 1px;
+  height: 1px;
+}
+footer .footer_container .arch_mobile img {
+  width: 1px;
+  height: 1px;
+}
+footer .footer_container .nav_buuton {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,13 +27,15 @@ footer .footer_container {
   height: 200px;
   background: #eeeff4;
 }
-footer .footer_container nav {
+footer .footer_container .nav_buuton nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 40px;
   width: 598px;
   height: 200px;
 }
-footer .footer_container nav .arch {
+footer .footer_container .nav_buuton nav .arch {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,30 +43,30 @@ footer .footer_container nav .arch {
   height: 200px;
   background: #1b1d23;
 }
-footer .footer_container nav ul {
+footer .footer_container .nav_buuton nav ul {
   display: flex;
   gap: 51px;
   width: 313px;
   height: 25px;
   list-style: none;
 }
-footer .footer_container nav ul a {
+footer .footer_container .nav_buuton nav ul a {
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 139%;
   color: #7d828f;
 }
-footer .footer_container nav ul a:hover {
+footer .footer_container .nav_buuton nav ul a:hover {
   transition: 0.3s;
   color: #1b1d23;
 }
-footer .footer_container a {
+footer .footer_container .nav_buuton a {
+  transform: translateX(126px);
   text-decoration: none;
   width: 252px;
-  transform: translateX(126px);
 }
-footer .footer_container a button {
+footer .footer_container .nav_buuton a button {
   display: flex;
   gap: 24px;
   align-items: center;
@@ -67,40 +82,51 @@ footer .footer_container a button {
   background: #1b1d23;
   color: #fff;
 }
-footer .footer_container a button:hover {
+footer .footer_container .nav_buuton a button:hover {
   transition: 0.3s;
   background: #60636d;
 }
 
 @media (max-width: 1200px) {
   footer {
-    max-width: 768px;
+    justify-content: center;
     height: 120px;
   }
   footer .footer_container {
+    width: 768px;
+    height: 120px;
+  }
+  footer .footer_container .arch_mobile {
+    width: 1px;
+    height: 1px;
+  }
+  footer .footer_container .arch_mobile img {
+    width: 1px;
+    height: 1px;
+  }
+  footer .footer_container .nav_buuton {
     width: 612px;
     height: 120px;
   }
-  footer .footer_container nav {
-    gap: 40px;
+  footer .footer_container .nav_buuton nav {
+    gap: 20px;
     width: 473px;
     height: 120px;
   }
-  footer .footer_container nav .arch {
+  footer .footer_container .nav_buuton nav .arch {
     width: 120px;
     height: 120px;
   }
-  footer .footer_container nav .arch img {
+  footer .footer_container .nav_buuton nav .arch img {
     width: 58px;
     height: 24px;
   }
-  footer .footer_container a button {
-    transform: translateX(-52px);
+  footer .footer_container .nav_buuton a {
+    transform: translateX(30px);
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   footer {
-    flex-direction: column;
     align-items: center;
     width: 100%;
     height: 443px;
@@ -112,28 +138,48 @@ footer .footer_container a button:hover {
     width: 375px;
     height: 443px;
   }
-  footer .footer_container nav {
-    width: 473px;
-    height: 120px;
-  }
-  footer .footer_container nav ul {
-    flex-direction: column;
+  footer .footer_container .arch_mobile {
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    transform: translate(50px, 130px);
-    width: 72px;
-    height: 139px;
-  }
-  footer .footer_container nav .arch {
-    transform: translate(180px, -65px);
     width: 120px;
     height: 120px;
+    background: #1b1d23;
   }
-  footer .footer_container nav .arch img {
+  footer .footer_container .arch_mobile img {
     width: 58px;
     height: 24px;
   }
-  footer .footer_container a button {
-    transform: translateX(-120px);
+  footer .footer_container .nav_buuton {
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+    height: 443px;
+  }
+  footer .footer_container .nav_buuton nav {
+    flex-direction: column;
+    width: 120px;
+    height: 120px;
+  }
+  footer .footer_container .nav_buuton nav ul {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    width: 72px;
+    height: 139px;
+  }
+  footer .footer_container .nav_buuton nav .arch {
+    display: none;
+  }
+  footer .footer_container .nav_buuton nav .arch img {
+    display: none;
+  }
+  footer .footer_container .nav_buuton a {
+    transform: translateX(0px);
+  }
+  footer .footer_container .nav_buuton a button {
+    align-self: center;
     margin-bottom: 48px;
   }
 }/*# sourceMappingURL=footer.css.map */

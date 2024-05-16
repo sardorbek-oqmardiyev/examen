@@ -21,7 +21,12 @@
   color: #c8ccd8;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+  .home_line {
+    left: 83px;
+  }
+}
+@media (max-width: 768px) {
   .home_line {
     display: none;
   }

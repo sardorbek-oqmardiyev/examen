@@ -68,78 +68,86 @@
           padding-bottom: 39px;
           width: 200px;
           height: 64px;
-          h6 {
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 125%;
-            color: #fff;
-          }
-          p {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 133%;
-            opacity: 0.75;
-            color: #fff;
-          }
+        }
+        h6 {
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 125%;
+          color: #fff;
+        }
+        p {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 133%;
+          opacity: 0.75;
+          color: #fff;
         }
       }
-      .tover_2_number {
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        width: 350px;
-        height: 560px;
-        background: url(../img/tover.png);
-        background-repeat: no-repeat;
-        .text_2_number {
-          padding-bottom: 39px;
-          width: 200px;
-          height: 64px;
-          h6 {
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 125%;
-            color: #fff;
-          }
-          p {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 133%;
-            opacity: 0.75;
-            color: #fff;
-          }
+    }
+    .tover_2_number {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      width: 350px;
+      height: 560px;
+      background: url(../img/tover.png);
+      background-repeat: no-repeat;
+      .text_2_number {
+        padding-bottom: 39px;
+        width: 200px;
+        height: 64px;
+        h6 {
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 125%;
+          color: #fff;
+        }
+        p {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 133%;
+          opacity: 0.75;
+          color: #fff;
         }
       }
-      .le_3_number {
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        width: 350px;
-        height: 560px;
-        background: url(../img/le_prototype.png);
-        background-repeat: no-repeat;
-        .text_3_number {
-          padding-bottom: 39px;
-          width: 200px;
-          height: 64px;
-          h6 {
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 125%;
-            color: #fff;
-          }
-          p {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 133%;
-            opacity: 0.75;
-            color: #fff;
-          }
+    }
+    .le_3_number {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      width: 350px;
+      height: 560px;
+      background: url(../img/le_prototype.png);
+      background-repeat: no-repeat;
+      .text_3_number {
+        padding-bottom: 39px;
+        width: 200px;
+        height: 64px;
+        h6 {
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 125%;
+          color: #fff;
+        }
+        p {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 133%;
+          opacity: 0.75;
+          color: #fff;
         }
       }
     }
   }
+  .button_header {
+    button {
+      font-size: 0.1px;
+      width: 1px;
+      height: 1px;
+    }
+  }
 }
+
 @media (max-width: 1200px) {
   .featuert {
     height: 925px;
@@ -151,6 +159,7 @@
       }
       .number_project {
         flex-direction: column;
+        gap: 24px;
         width: 573px;
         height: 768px;
         .project_1_number {
@@ -179,6 +188,89 @@
           .text_3_number {
             padding-left: 40px;
           }
+        }
+      }
+      .button_header {
+        button {
+          font-size: 0.1px;
+          width: 1px;
+          height: 1px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .featuert {
+    height: 925px;
+    .featuert_container {
+      gap: 43px;
+      width: 311px;
+      height: 925px;
+      .featuert_header {
+        width: 311px;
+        h5 {
+          font-size: 48px;
+        }
+        a {
+          button {
+            display: none;
+          }
+        }
+      }
+      .number_project {
+        flex-direction: column;
+        width: 311px;
+        height: 768px;
+        .project_1_number {
+          justify-content: flex-start;
+          width: 311px;
+          height: 240px;
+          background: url(../../img/project_del_sol_mobelni.png);
+          .text_part {
+            padding-left: 40px;
+            h6 {
+              font-size: 32px;
+            }
+          }
+        }
+        .tover_2_number {
+          justify-content: flex-start;
+          width: 311px;
+          height: 240px;
+          background: url(../../img/tover_mobilne.png);
+          .text_2_number {
+            padding-left: 40px;
+            h6 {
+              font-size: 32px;
+            }
+          }
+        }
+        .le_3_number {
+          justify-content: flex-start;
+          width: 311px;
+          height: 240px;
+          background: url(../../img/le_prototype-mobilne.png);
+          .text_3_number {
+            padding-left: 40px;
+            h6 {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+      .button_header {
+        text-decoration: none;
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          font-size: 18px;
+          width: 311px;
+          height: 72px;
+          background: #1b1d23;
+          color: #fff;
         }
       }
     }

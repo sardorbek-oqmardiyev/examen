@@ -69,3 +69,19 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .small {
+    .small_container {
+      width: 375px;
+      background: url(../../img/lake_tablet.png) no-repeat;
+      background-size: 375px 560px;
+      .team_big {
+        margin-left: 0px;
+        padding-left: 58px;
+        h4 {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}

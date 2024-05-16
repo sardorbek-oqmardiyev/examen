@@ -1,71 +1,86 @@
 footer {
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
   font-family: "League Spartan", sans-serif;
   width: 100%;
-  max-width: 1110px;
   height: 200px;
   .footer_container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 984px;
+    width: 1110px;
     height: 200px;
-    background: #eeeff4;
-    nav {
-      display: flex;
-      align-items: center;
-      width: 598px;
-      height: 200px;
-      .arch {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 200px;
-        height: 200px;
-        background: #1b1d23;
+    .arch_mobile {
+      display: none;
+      width: 1px;
+      height: 1px;
+      img {
+        width: 1px;
+        height: 1px;
       }
-      ul {
+    }
+    .nav_buuton {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 984px;
+      height: 200px;
+      background: #eeeff4;
+      nav {
         display: flex;
-        gap: 51px;
-        width: 313px;
-        height: 25px;
-        list-style: none;
-        a {
-          text-decoration: none;
-          font-weight: 700;
-          font-size: 18px;
-          line-height: 139%;
-          color: #7d828f;
-          &:hover {
-            transition: 0.3s;
-            color: #1b1d23;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        width: 598px;
+        height: 200px;
+        .arch {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 200px;
+          height: 200px;
+          background: #1b1d23;
+        }
+        ul {
+          display: flex;
+          gap: 51px;
+          width: 313px;
+          height: 25px;
+          list-style: none;
+          a {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 139%;
+            color: #7d828f;
+            &:hover {
+              transition: 0.3s;
+              color: #1b1d23;
+            }
           }
         }
       }
-    }
-    a {
-      text-decoration: none;
-      width: 252px;
-      transform: translateX(126px);
-      button {
-        display: flex;
-        gap: 24px;
-        align-items: center;
-        padding-left: 37px;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 139%;
-        text-align: right;
-        cursor: pointer;
-        border: none;
+      a {
+        transform: translateX(126px);
+        text-decoration: none;
         width: 252px;
-        height: 72px;
-        background: #1b1d23;
-        color: #fff;
-        &:hover {
-          transition: 0.3s;
-          background: #60636d;
+        button {
+          display: flex;
+          gap: 24px;
+          align-items: center;
+          padding-left: 37px;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 139%;
+          text-align: right;
+          cursor: pointer;
+          border: none;
+          width: 252px;
+          height: 72px;
+          background: #1b1d23;
+          color: #fff;
+          &:hover {
+            transition: 0.3s;
+            background: #60636d;
+          }
         }
       }
     }
@@ -73,35 +88,44 @@ footer {
 }
 @media (max-width: 1200px) {
   footer {
-    max-width: 768px;
+    justify-content: center;
     height: 120px;
     .footer_container {
-      width: 612px;
+      width: 768px;
       height: 120px;
-      nav {
-        gap: 40px;
-        width: 473px;
-        height: 120px;
-        .arch {
-          width: 120px;
-          height: 120px;
-          img {
-            width: 58px;
-            height: 24px;
-          }
+      .arch_mobile {
+        width: 1px;
+        height: 1px;
+        img {
+          width: 1px;
+          height: 1px;
         }
       }
-      a {
-        button {
-          transform: translateX(-52px);
+      .nav_buuton {
+        width: 612px;
+        height: 120px;
+        nav {
+          gap: 20px;
+          width: 473px;
+          height: 120px;
+          .arch {
+            width: 120px;
+            height: 120px;
+            img {
+              width: 58px;
+              height: 24px;
+            }
+          }
+        }
+        a {
+          transform: translateX(30px);
         }
       }
     }
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   footer {
-    flex-direction: column;
     align-items: center;
     width: 100%;
     height: 443px;
@@ -111,30 +135,48 @@ footer {
       align-items: center;
       width: 375px;
       height: 443px;
-      nav {
-        width: 473px;
+      .arch_mobile {
+        margin-top: -60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
         height: 120px;
-        ul {
-          flex-direction: column;
-          align-items: center;
-          transform: translate(50px, 130px);
-          width: 72px;
-          height: 139px;
-        }
-        .arch {
-          transform: translate(180px, -65px);
-          width: 120px;
-          height: 120px;
-          img {
-            width: 58px;
-            height: 24px;
-          }
+        background: #1b1d23;
+        img {
+          width: 58px;
+          height: 24px;
         }
       }
-      a {
-        button {
-          transform: translateX(-120px);
-          margin-bottom: 48px;
+      .nav_buuton {
+        flex-direction: column;
+        align-items: center;
+        width: 375px;
+        height: 443px;
+        nav {
+          flex-direction: column;
+          width: 120px;
+          height: 120px;
+          ul {
+            margin-top: 30px;
+            flex-direction: column;
+            align-items: center;
+            width: 72px;
+            height: 139px;
+          }
+          .arch {
+            display: none;
+            img {
+              display: none;
+            }
+          }
+        }
+        a {
+          transform: translateX(0px);
+          button {
+            align-self: center;
+            margin-bottom: 48px;
+          }
         }
       }
     }

@@ -14,10 +14,14 @@
     .founded {
       display: flex;
       flex-direction: column;
-      gap: 51px;
-      margin-top: 83px;
+      justify-content: space-between;
       width: 446px;
       height: 558px;
+      .line_your {
+        width: 65px;
+        height: 1px;
+        background: #c8ccd8;
+      }
       h1 {
         width: 300px;
         font-weight: 700;
@@ -43,6 +47,43 @@
     img {
       width: 540px;
       height: 558px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .our_heritage {
+    height: 485px;
+    .our_heritage_container {
+      width: 573px;
+      height: 485px;
+      .founded {
+        width: 574px;
+        height: 485px;
+        .founded_container {
+          width: 573px;
+          height: 216px;
+        }
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .our_heritage {
+    height: 679px;
+    .our_heritage_container {
+      width: 311px;
+      height: 679px;
+      .founded {
+        width: 311px;
+        height: 679px;
+        .founded_container {
+          width: 310px;
+          height: 384px;
+        }
+      }
     }
   }
 }

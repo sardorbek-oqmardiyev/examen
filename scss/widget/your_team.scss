@@ -30,12 +30,16 @@
       .professionals {
         display: flex;
         flex-direction: column;
-        gap: 49px;
         margin: 0 auto;
+        gap: 49px;
         width: 446px;
         height: 341px;
+        .line_your {
+          width: 65px;
+          height: 1px;
+          background: #c8ccd8;
+        }
         h1 {
-          margin-top: 58px;
           font-weight: 700;
           font-size: 72px;
           line-height: 89%;
@@ -47,6 +51,57 @@
           font-size: 18px;
           line-height: 133%;
           color: #60636d;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .your_team {
+    .your_team_container {
+      width: 573px;
+      height: 720px;
+      background: url(../../img/keyboard_tablet.png) no-repeat left;
+      .about {
+        width: 572px;
+        height: 431px;
+        transform: translateX(57px);
+        img {
+          transform: translate(170px, -50px);
+          width: 342px;
+          height: 150px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .your_team {
+    height: 529px;
+    .your_team_container {
+      align-items: flex-end;
+      justify-content: flex-start;
+      width: 375px;
+      height: 529px;
+      background: url(../../img/keyboard_mobilne.png) no-repeat left top;
+      .about {
+        width: 311px;
+        height: 334px;
+        transform: translateX(0px);
+        img {
+          display: none;
+        }
+        .professionals {
+          padding-left: 32px;
+          gap: 20px;
+          width: 311px;
+          height: 269px;
+          h1 {
+            font-size: 48px;
+          }
+          p {
+            font-size: 18px;
+          }
         }
       }
     }
