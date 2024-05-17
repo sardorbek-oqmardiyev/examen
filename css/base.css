@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 100vh;
+}
+body main {
+  flex-grow: 1;
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}/*# sourceMappingURL=base.css.map */
